@@ -3,16 +3,9 @@ const express =require('express')
 const path = require('path')
 
 const app = express()
-//Middleware working time 
 
-// app.use(function(req,res, next){
-//     const date =new Date();
-//     if((date.getDay()=== 0 || date.getDay() === 6 || (date.getHours() >17))){
-//       res.end('Return in working time , this page is closed')
-//     }
-//       next()
-// })
-
+const auth = require('./auth')
+app.use(auth)
 
 
 
@@ -44,5 +37,5 @@ const PORT = process.env.PORT || 7000
 app.listen(PORT ,(err)=>{
     (err) ? console.error('Run Server is failed')
     :
-    console.log(`Server is run on port${PORT}`)
+    console.log(`Server is run on server ${PORT}`)
 })

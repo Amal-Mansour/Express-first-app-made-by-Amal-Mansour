@@ -1,3 +1,39 @@
 .contact{
     border: 3px solide red;
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items: center;
+    margin :150px 300px;
+    background-color: rgb(248 249 250);
+    width:1000px;
+    height:440px;
+
+}
+
+.coordonée{
+    width: 30%;
+    margin: 10px 30px;
+    background-color:white;
+}
+
+.message{
+    width: 85%;
+    height: 45%;
+    margin: 15px 80px;
+    background-color: white
+}
+
+.btn{
+    margin: 5px 80px;
+    padding: 14px 45px;
+    color:white;
+    background-color: black;
+    border-radius: 12px;
+}
+
+.input-contaier{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
